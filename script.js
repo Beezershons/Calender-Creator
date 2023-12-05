@@ -7,9 +7,9 @@ $("#currentDay").text(today);
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
-    $(".saveBtn").on("click", function(){
+    $(".saveBtn").on("click", function () {
         var time = $(this).parent().attr("id");
-        var notes = $(this).siblings(".discription").val();
+        var notes = $(this).siblings(".description").val();
 
         // saves to local storage
         localStorage.setItem(time, notes);
